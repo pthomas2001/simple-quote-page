@@ -4,9 +4,11 @@
 
 
 
-body {
+/* == MAIN == */
+
+main {
     height: 100vh;
-    background: url("https://raw.githubusercontent.com/CodeBerrySchool/simple-quote-page/master/assets/freedom.jpg") no-repeat center;
+    background: url("assets/freedom.jpg") no-repeat center;
     background-size: cover;
     padding: 2rem 1rem
 }
@@ -31,8 +33,12 @@ p {
     margin-top: 1rem
 }
 
+
+
+/* ==== TABLET ==== */
+
 @media (min-width: 768px) {
-    body {
+    main {
         padding: 3rem 4rem
     }
 
@@ -46,8 +52,10 @@ p {
     }
 }
 
+/* ==== COMPUTER ==== */
+
 @media (min-width: 1024px) {
-    body {
+    main {
         padding: 2rem 12rem
     }
 
@@ -57,7 +65,7 @@ p {
 }
 
 @media (min-width: 1440px) {
-    body {
+    main {
         padding: 3rem 21rem
     }
 }

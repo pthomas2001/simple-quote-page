@@ -11,7 +11,8 @@ nav {
    display: flex;
    justify-content: space-around;
    align-items: center;
-   height: 4rem
+   height: 2rem;
+   width: 100%
 }
 
 nav a {
@@ -24,6 +25,10 @@ nav a {
 
 nav a:hover {
     text-decoration: underline
+}
+
+nav .tablet {
+    display: none
 }
 
 /* = main = */
@@ -58,6 +63,25 @@ p {
 /* ==== TABLET ==== */
 
 @media (min-width: 768px) {
+
+    /* = navbar = */
+    nav {
+        padding: 0 5rem
+    }
+
+    nav .tablet {
+        display: inline-block
+    }
+
+    nav.tablet-nav {
+        height: 4rem
+    }
+
+    nav.phone-nav {
+        display: none
+    }
+
+    /* = main = */
     main {
         padding: 3rem 4rem
     }
@@ -75,6 +99,8 @@ p {
 /* ==== COMPUTER ==== */
 
 @media (min-width: 1024px) {
+
+    /* = main = */
     main {
         padding: 2rem 12rem
     }
@@ -82,10 +108,33 @@ p {
     h1 {
         line-height: 1.7
     }
+
+    p {
+        margin-top: .5rem
+    }
 }
 
 @media (min-width: 1440px) {
+
+    /* = navbar = */
+    nav {
+        padding: 0 10rem
+    }
+
+    /* = main = */
     main {
         padding: 3rem 21rem
+    }
+}
+
+@media (min-width: 2560px) {
+    /* = navbar = */
+    nav {
+        padding: 0 30rem
+    }
+
+    /* = main = */
+    main {
+        padding: 3rem 48rem
     }
 }
